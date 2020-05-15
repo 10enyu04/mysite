@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+
+}
+.main-visual {
+  position: relative;
+  background: radial-gradient(rgba(#fff, 0), rgba(#fff, 0.8) 50%), url(../images/water.jpg);
+  background-size: cover;
+  height: 500px;
+  margin-top: 56px;
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(#fff, 0.8);
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    text-shadow: 0 0 15px #000;
+  }
+}
+footer {
+  background-image: url(../images/water.jpg);
+  height: 200px;
+  background-size: cover;
+}
+
+// .nav-link, .dropdown-menu {
+//   text-align: center;
+// }
+
+
+
+.section_1 {
+  background-image: url(../images/texture_blue.jpg);
+  background-size: cover;
+  height: 2000px;
+}
+.section_2 {
+  background-image: url("../images/black_purple.jpg");
+  background-size: cover;
+  height: 2000px;;
+}
+
+.gallery {
+  background-color: #333;
+  padding: 82px 0 92px 0;
+
+  .animated {
+    // opacity: 0;
+  }
+
+  .image-gallery {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+
+    .image-gallery__item {
+      display: inline-block;
+      box-sizing: border-box;
+      width: 200px;
+      height: 200px;
+      margin: 0 9px 18px 9px;
+      border: 8px solid #fff;
+      box-shadow: 4px 4px 6px 1px #ccc;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+
+#to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f0f0f0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #333;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+// body {
+//   width: 400px;
+//   margin: 0 auto;
+//   min-height: 50vh;
+//   display: grid;
+//   grid-template: 
+//     "header header header" 70px
+//     "left   center right " 1fr
+//     "footer footer footer" 30px
+//     / 70px 1fr 60px;
+//   gap: 10px;
+// }
+
+// header {
+//   background-color: #aaa;
+//   grid-area: header;
+// }
+// main {
+//   background-color: #eee;
+//   grid-area: center;
+// }
+// nav {
+//   background-color: #ccc;
+//   grid-area: left;
+// }
+// aside {
+//   background-color: #bbb;
+//   grid-area: right;
+// }
+// footer {
+//   background-color: #ddd;
+//   grid-area: footer;
+// }
+
+// @media screen and (max-width: 1000px) {
+//   body {
+//     grid-template: 
+//       "header" 70px
+//       "center" 1fr
+//       "left  "
+//       "right "
+//       "footer" 30px;
+//   }
+// }
