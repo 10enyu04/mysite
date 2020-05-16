@@ -8,72 +8,157 @@
 body {
   background-color: #333;
   color: #fff;
+  font-family: 'Secular One', sans-serif;
+  font-size: 14px;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  z-index: 9999;
-  width: 100%;
+body section, body div, body h3, body p {
+  margin: 0;
+  padding: 0;
 }
 
 .main-visual {
   position: relative;
-  background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%), url(../images/water.jpg);
+  background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8) 50%), url(../images/texture_water.jpg);
+  background-position: center;
   background-size: cover;
-  height: 500px;
-  margin-top: 56px;
+  height: 100vh;
 }
 
 .main-visual h1 {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
+  background-color: rgba(255, 255, 255, 0.5);
   width: 100%;
   height: 150px;
   line-height: 150px;
-  text-shadow: 0 0 15px #000;
+  text-shadow: 0 0 10px #000;
 }
 
-footer {
-  background-image: url(../images/water.jpg);
-  height: 200px;
+.section-title {
+  position: relative;
+  height: 300px;
+}
+
+#profile h2 {
+  padding-left: 50px;
+  color: #333;
+  text-shadow: 0 0 5px #fff;
+  font-style: italic;
+}
+
+#profile .section-items {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.8))), url(../images/texture_black_gold.jpg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url(../images/texture_black_gold.jpg);
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-.section_1 {
-  background-image: url(../images/texture_blue.jpg);
-  background-size: cover;
-  height: 2000px;
+#profile .section-items .table {
+  color: #fff;
 }
 
-.section_2 {
-  background-image: url("../images/black_purple.jpg");
-  background-size: cover;
-  height: 2000px;
+#jobs {
+  background-color: #000;
+  padding-bottom: 20px;
 }
 
-.gallery {
+#jobs .section-title {
   background-color: #333;
-  padding: 82px 0 92px 0;
 }
 
-.gallery .image-gallery {
-  width: 90%;
-  max-width: 1024px;
-  margin: 0 auto;
-  text-align: center;
+#jobs .section-title h2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-left: 50px;
+  color: #333;
+  text-shadow: 0 0 5px #fff;
+  font-style: italic;
 }
 
-.gallery .image-gallery .image-gallery__item {
+#jobs .section-items {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), color-stop(50%, rgba(0, 0, 0, 0.8))), url("../images/texture_black_purple.jpg");
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8) 50%), url("../images/texture_black_purple.jpg");
+  background-position: center;
+  background-size: cover;
+  margin-top: 20px;
+}
+
+#jobs .section-items .items-content {
+  margin: 0;
+  padding: 70px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#jobs .section-items .items-content:first-child {
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#jobs .section-items .items-content:last-child {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#jobs .section-items .items-content .content-title {
+  margin: 0;
+  padding: 0 0 20px 10px;
+}
+
+#jobs .section-items .items-content .content-title h3 {
+  margin: 0;
+  padding-bottom: 5px;
+  font-style: italic;
+  font-size: 20px;
+}
+
+#jobs .section-items .items-content .content-title p {
+  font-size: 12px;
+}
+
+#jobs .section-items .items-content .content {
+  letter-spacing: 0.1rem;
+}
+
+#hobbies h2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding-left: 50px;
+  color: #333;
+  text-shadow: 0 0 5px #fff;
+  font-style: italic;
+}
+
+#hobbies .section-items {
+  background-image: url(../images/texture_black_purple_long.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#hobbies .section-items .items-content {
+  margin: 0;
+  padding: 50px 20px;
+}
+
+#hobbies .section-items .items-content .content-title {
+  margin: 0;
+  padding: 10px;
+  border-left: 5px double #fff;
+}
+
+#hobbies .section-items .items-content .image-gallery {
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 200px;
   height: 200px;
-  margin: 0 9px 18px 9px;
+  margin: 20px 10px 5px;
   border: 8px solid #fff;
   -webkit-box-shadow: 4px 4px 6px 1px #ccc;
           box-shadow: 4px 4px 6px 1px #ccc;
@@ -83,9 +168,71 @@ footer {
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
-.gallery .image-gallery .image-gallery__item:hover {
+#hobbies .section-items .items-content .image-gallery:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#hobbies .section-items .items-content .image-gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(70%, white)), url(../images/texture_water.jpg);
+  background: linear-gradient(rgba(255, 255, 255, 0), white 70%), url(../images/texture_water.jpg);
+  height: 200px;
+  background-size: cover;
+}
+
+footer small {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: #333;
+}
+
+.animated {
+  opacity: 0;
+}
+
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+  padding: 0;
+}
+
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+  top: 0;
+  bottom: 0;
+}
+
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+  padding: 0;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
 }
 
 #to-top-btn {

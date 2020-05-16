@@ -24,31 +24,28 @@
       <!-- <link rel="stylesheet" href="css/noscript.css"> -->
     </noscript>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <a href="#" class="navbar-brand">my site.</a>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand" aria-label="home">my site.</a>
 
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         
         <div id="nav-bar" class="collapse navbar-collapse text-center">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a href="#" class="nav-link">link_1</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">link_2</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">link_3</a></li>
+          <ul class="navbar-nav ml-auto color-white">
+            <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
             <li class="nav-item dropdown">
-              <a href="#" class="nav-link doropdown-toggle" data-toggle="dropdown">dropdown_link</a>
-              <div class="dropdown-menu text-center">
-                <a href="#" class="dropdown-item">dropdown_link1</a>
-                <a href="#" class="dropdown-item">dropdown_link2</a>
-                <a href="#" class="dropdown-item">dropdown_link3</a>
-                <a href="#" class="dropdown-item">dropdown_link4</a>
-              </div>
+              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Jobs</a>
+                <div class="dropdown-menu text-center">
+                  <a href="#radiologist" class="dropdown-item">Radiologist</a>
+                  <a href="#marketer" class="dropdown-item">MR Marketing Specialist</a>
+                  <a href="#administrator" class="dropdown-item">Administrator of Remote Interpretation</a>
+                </div>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">link_4</a></li>
+            <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
           </ul>
         </div>
       </nav>
@@ -59,38 +56,149 @@
     </div>
 
     <main>
-      <section class="section_1"></section>
-      <section class="section_2"></section>
-      <section id="gallery" class="gallery">
-        <div class="gallery__phrase animated text-center"></div>
-        <h2 class="gallery__title animated pb-3 text-center">gallery</h2>
-        <div class="image-gallery animated">
-          <div class="image-gallery__item">
-            <a href="images/fall.jpg" class="popup d-inline-block">
-              <img src="images/fall.jpg" class="img-fluid" alt="fall" width="250" height="250">
-            </a>
+      <section id="profile" class="container">
+        <div class="section-title d-inline-block">
+          <h2>Profile</h2>
+          <div class="profile-img d-inline-block">
+            <img src="images/pic_snowboard.jpg" alt="" class="img-fluid rounded-circle border" width="100">
+        </div>
+        </div>
+        <div class="section-items row">
+          <div class="table-basic p-5 col-md-6">
+            <table class="table table-borderless text-center">
+              <tr>
+                <th>name</th>
+                <td>yu endo</td>
+              </tr>
+              <tr>
+                <th>sex</th>
+                <td>male</td>
+              </tr>
+              <tr>
+                <th>age</th>
+                <td>28</td>
+              </tr>
+            </table>
           </div>
-          <div class="image-gallery__item">
-            <a href="images/fall_1.jpg" class="popup d-inline-block">
-              <img src="images/fall_1.jpg" class="img-fluid" alt="fall" width="250" height="250">
-            </a>
+          <div class="table-from p-5 col-md-6">
+            <table class="table table-borderless text-center">
+              <tr>
+                <th>background</th>
+              </tr>
+              <tr>
+                <td>yamagata pref.</td>
+              </tr>
+              <tr>
+                <td>tsuruoka south h.school</td>
+              </tr>
+              <tr>
+                <td>osaka pref.</td>
+              </tr>
+              <tr>
+                <td>osaka univ.</td>
+              </tr>
+            </table>
           </div>
-          <div class="image-gallery__item">
-            <a href="images/temple.jpg" class="popup d-inline-block">
-              <img src="images/temple.jpg" class="img-fluid" alt="fall" width="250" height="250">
-            </a>
+        </div>
+      </section>
+
+      <section id="jobs">
+        <div class="section-title">
+          <h2>Jobs</h2>
+        </div>
+        <div class="section-items">
+          <div id="radiologist" class="items-content">
+            <div class="content-title">
+              <h3>Radiologist</h3>
+              <p>- 診療放射線技師 -</p>
+            </div>
+            <div class="content">
+              <p>
+                病床数500床以上の総合病院で5年半勤務。<br>
+                一般撮影・X線透視検査・CT検査・MR検査を習得。<br>
+                MRチームの主要メンバーとして、MR検査室の管理を行う。
+              </p>
+            </div>
           </div>
-          <div class="image-gallery__item">
-            <a href="images/autumn.jpg" class="popup d-inline-block">
-              <img src="images/autumn.jpg" class="img-fluid" alt="fall" width="250" height="250">
-            </a>
+          <div id="marketer" class="items-content">
+            <div class="content-title">
+              <h3>MR Marketing Specialist</h3>
+              <p>- MRマーケティングスペシャリスト -</p>
+            </div>
+            <div class="content">
+              <p>
+                MR検査装置のマーケティングに従事。<br>
+                最新のMR装置や技術のプレゼンを行う。<br>
+                また、MR関連の勉強会の開催・運営も行う。
+              </p>
+            </div>
+          </div>
+          <div id="administrator" class="items-content">
+            <div class="content-title">
+              <h3>Administrator of Remote Interpretation</h3>
+              <p>- 遠隔読影管理者 -</p>
+            </div>
+            <div class="content">
+              <p>
+                大阪大学の放射線科医と連携し、提携医療機関への遠隔読影を行う。<br>
+                読影依頼・読影レポート・読影スケジュール等の管理を行う。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hobbies" class="hobbies">
+        <div class="section-title">
+          <h2>Hobbies</h2>
+        </div>
+        <div class="section-items">
+          <div class="items-content animated">
+            <div class="content-title">
+              <h3>snowboard</h3>
+            </div>
+            <div class="content image-gallery">
+              <a href="images/pic_snowboard.jpg" class="popup">
+                <img src="images/pic_snowboard.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+            <div class="content image-gallery">
+              <a href="images/pic_winter.jpg" class="popup">
+                <img src="images/pic_winter.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+          <div class="items-content animated">
+            <div class="content-title">
+              <h3>driving</h3>
+            </div>
+            <div class="content image-gallery">
+              <a href="images/pic_sun.jpg" class="popup">
+                <img src="images/pic_sun.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+            <div class="content image-gallery">
+              <a href="images/pic_lake.jpg" class="popup">
+                <img src="images/pic_lake.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+            <div class="content image-gallery">
+              <a href="images/pic_autumn.jpg" class="popup">
+                <img src="images/pic_autumn.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+            <div class="content image-gallery">
+              <a href="images/pic_fall_1.jpg" class="popup">
+                <img src="images/pic_fall_1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
     
     <footer>
-
+      <small>&copy; 2020. yu endo.</small>
     </footer>
 
     <a href="#" id="to-top-btn">▲</a>
